@@ -1,0 +1,8 @@
+{
+  "restartable": "rs",
+  "ignore": [".git", "node_modules/**/node_modules", ".yaml"],
+  "verbose": true,
+  "watch": ["lib/**", "src/**"],
+  "ext": "ts.json",
+  "exec": "npx ts-node ./src/index.ts | npx pino-pretty -t SYS:yyyy-mm-dd, HH:MM"
+}
